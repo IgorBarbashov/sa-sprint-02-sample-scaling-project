@@ -18,3 +18,9 @@ echo "yes" | redis-cli --cluster create   173.17.0.2:6379   173.17.0.3:6379   17
 ```bash
 redis-cli cluster nodes 
 ```
+
+Для остановки docker-контейнеров рекомендуется использовать команду
+```bash
+docker compose down -v 
+```
+в этом случай вместе удалением контейнера удаляются и смонтированные `volume` 
